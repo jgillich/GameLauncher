@@ -126,7 +126,7 @@ namespace PSLauncher
             pathsToCheck.Add(psFolder);
 
             // worth a shot! (for windows XP or old installs)
-            psFolder = Path.Combine(ProgramFilesx86(), "Sony\\PlanetSide");
+            psFolder = Path.Combine(ProgramFilesx86() ?? "", "Sony\\PlanetSide");
             pathsToCheck.Add(psFolder);
 
             int i = 1;
